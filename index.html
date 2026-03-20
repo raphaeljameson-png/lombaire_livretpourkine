@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Guide de Rééducation du Rachis Lombaire | EFR</title>
+<style>
+  :root {
+    --ink:#111;
+    --muted:#444;
+    --accent:#0b6fa4;
+    --accent2:#22b8b8;
+    --bg:#fff;
+    --border:#d9d9d9;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: #f3f5f7;
+    color: var(--ink);
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,Helvetica,sans-serif;
+    line-height: 1.3;
+  }
+  
+  /* Toolbar écran */
+  .toolbar {
+    position: sticky; top: 0; z-index: 5;
+    background: rgba(255,255,255,.92); border-bottom: 1px solid var(--border);
+    backdrop-filter: blur(6px); padding: 10px 16px;
+  }
+  .toolbar-inner {
+    max-width: 980px; margin: 0 auto;
+    display: flex; gap: 10px; align-items: center;
+    justify-content: space-between; flex-wrap: wrap;
+  }
+  .toolbar .btn {
+    border: 1px solid var(--border); background: white;
+    padding: 8px 12px; border-radius: 8px; cursor: pointer;
+    font-weight: 600; text-decoration: none; color: var(--ink);
+    display: inline-flex; align-items: center; gap: 5px;
+  }
+  .toolbar .btn.primary { border-color: var(--accent); background: var(--accent); color: #fff; }
+  
+  /* Conteneur principal */
+  .wrap { max-width: 980px; margin: 22px auto; padding: 0 16px 28px; }
+  .page { 
+    background: var(--bg); border: 1px solid var(--border); border-radius: 10px;
+    padding: 26px 34px; box-shadow: 0 8px 24px rgba(0,0,0,.06);
+  }
+  header.top {
+    display: grid; grid-template-columns: 110px 1fr; gap: 16px;
+    align-items: center; padding-bottom: 14px; border-bottom: 2px solid var(--accent);
+  }
+  header.top img { width: 110px; height: auto; }
+  .brand .brand-name { margin: 0; font-size: 18px; letter-spacing: .2px; text-transform: uppercase; font-weight: bold; }
+  .brand .line { color: var(--muted); font-size: 13px; margin-top: 2px; }
+  
+  .doc-title { margin-top: 18px; border-left: 6px solid var(--accent2); padding-left: 14px; }
+  .doc-title h1 { margin: 0; font-size: 22px; }
+  .doc-title .meta { margin-top: 6px; color: var(--muted); font-size: 13px; }
+  
+  h2.chapter-title { margin: 22px 0 8px; font-size: 16px; color: var(--accent); text-transform: uppercase; }
+  h3.section-title { margin: 14px 0 6px; font-size: 14px; color: var(--ink); font-weight: 700; }
+  
+  .warn-box { 
+    border: 2px solid #d93025; background: #fff9f8; 
+    padding: 12px; margin: 16px 0; border-radius: 8px;
+    color: #d93025; font-weight: bold; text-align: center;
+  }
+
+  .pillar-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin: 16px 0; }
+  .pillar-item { background: #f8fcff; padding: 15px; border-radius: 8px; border-top: 4px solid var(--accent); }
+  .pillar-item h4 { margin: 0 0 8px 0; color: var(--accent); font-size: 14px; text-transform: uppercase; }
+
+  .exercise-box { background: #f0f8ff; padding: 15px; border-radius: 8px; margin: 12px 0; border-left: 4px solid var(--accent2); }
+  
+  footer { margin-top: 25px; padding-top: 15px; border-top: 1px solid var(--border); color: var(--muted); font-size: 11px; text-align: center; }
+  .emails { margin-top: 8px; font-weight: 600; color: var(--accent); }
+
+  @media print {
+    body { background: white !important; font-size: 10.5px !important; }
+    .toolbar, .no-print { display: none !important; }
+    .wrap { margin: 0 !important; padding: 0 !important; max-width: 100% !important; }
+    .page { border: none !important; box-shadow: none !important; padding: 0 !important; }
+    header.top img { width: 80px !important; }
+    .pillar-grid { grid-template-columns: 1fr 1fr !important; gap: 10px !important; }
+  }
+</style>
+</head>
+<body>
+
+<div class="toolbar no-print">
+  <div class="toolbar-inner">
+    <a href="https://raphaeljameson-png.github.io/accueil_fiches_informatives_EFR/" class="btn">← Accueil</a>
+    <div style="font-weight:700; text-align: center; flex: 1;">Guide Kiné : Rachis Lombaire</div>
+    <button class="btn primary" onclick="window.print()">Imprimer Recto A4</button>
+  </div>
+</div>
+
+<div class="wrap">
+  <div class="page">
+    <header class="top">
+      <img alt="Logo Espace Francilien du Rachis" src="logo.png"/>
+      <div class="brand">
+        <div class="brand-name">ESPACE FRANCILIEN DU RACHIS</div>
+        <div class="line">95, rue de Prony — 75017 Paris | www.rachis.paris</div>
+        <div class="line">Dr R. Jameson · Dr M. Lamerain · Dr C. Travert</div>
+      </div>
+    </header>
+    
+    <div class="doc-title">
+      <h1>GUIDE DE RÉÉDUCATION DU RACHIS LOMBAIRE</h1>
+      <div class="meta">
+        <div><strong>Protocole : Lombalgie chronique / Discopathie / Post-discectomie</strong></div>
+        <div><em>À l'attention du masseur-kinésithérapeute</em></div>
+      </div>
+    </div>
+
+    <div class="warn-box">
+      ⚠️ CONTRE-INDICATION : PAS DE MANIPULATION PAR POUSSÉE BRUTALE (HVLA)
+    </div>
+
+    <h2 class="chapter-title">LES 4 PILIERS DE LA RÉÉDUCATION LOMBAIRE</h2>
+    
+    <div class="pillar-grid">
+      <div class="pillar-item">
+        <h4>1. Stabilisation Profonde</h4>
+        <p>Priorité au recrutement du transverse et des multifides. Travail du verrouillage lombaire en position neutre.</p>
+      </div>
+      <div class="pillar-item">
+        <h4>2. Dissociation</h4>
+        <p>Améliorer la mobilité des hanches (coxo-fémorales) pour épargner le segment lombaire lors des mouvements.</p>
+      </div>
+      <div class="pillar-item">
+        <h4>3. Gainage Actif</h4>
+        <p>Renforcement global de la sangle abdominale et de la chaîne postérieure (fessiers, ischios, spinaux).</p>
+      </div>
+      <div class="pillar-item">
+        <h4>4. École du Dos</h4>
+        <p>Automatisation des transferts, du ramassage d'objet et ergonomie au poste de travail.</p>
+      </div>
+    </div>
+
+    <h2 class="chapter-title">PROTOCOLE PRATIQUE</h2>
+
+    <h3 class="section-title">Phase Antalgique (si nécessaire)</h3>
+    <ul>
+      <li>Massage décontracturant des muscles paravertébraux et fessiers (souvent hypertoniques).</li>
+      <li>Physiothérapie antalgique (chaleur, TENS).</li>
+    </ul>
+
+    <h3 class="section-title">Renforcement et Gainage</h3>
+    <div class="exercise-box">
+      <strong>Progression recommandée :</strong> 
+      1. Isométrie en décubitus (transverse) <br>
+      2. Pont fessier (Bridge) <br>
+      3. Bird-Dog (équilibre quadrupédique) <br>
+      4. Planche latérale et frontale (infra-douloureux).
+    </div>
+
+    <h3 class="section-title">Étirements et Mobilité</h3>
+    <ul>
+      <li>Étirements des muscles psoas et ischio-jambiers (protection lombaire).</li>
+      <li><strong>Attention :</strong> Pas d'étirements en flexion lombaire forcée ("chercher les pieds") si hernie discale active.</li>
+    </ul>
+
+    <h2 class="chapter-title">CONSIGNES POUR LE PATIENT</h2>
+    <div class="note">
+      <ul>
+        <li><strong>Activité :</strong> La marche quotidienne est votre meilleur médicament.</li>
+        <li><strong>Gestes :</strong> Pliez les genoux pour ramasser un objet. Gardez le dos droit.</li>
+        <li><strong>Posture :</strong> Changez de position toutes les 30 minutes si vous travaillez assis.</li>
+      </ul>
+    </div>
+
+    <footer>
+      <div><strong>Espace Francilien du Rachis</strong> — 95, rue de Prony, 75017 Paris</div>
+      <div class="emails">
+        dr.jameson@rachis.paris • dr.mlamerain@gmail.com • dr.ctravert@gmail.com
+      </div>
+      <div style="margin-top: 5px;">www.rachis.paris</div>
+    </footer>
+  </div>
+</div>
+
+</body>
+</html>
